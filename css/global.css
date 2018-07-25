@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+h1,h2,h3,ul,li,p{
+	margin:0;
+	padding:0;
+}
+ul,li{
+	list-style:none;
+}
+
+body{
+	margin:0;
+	background:#fff;
+	font-size:12px;
+	font-family:Arial, Times New Roman;
+}
+ 
+
+img{
+	border:none;	
+}
+
+.clear{
+	clear:both;	
+}
+.err{
+	border:solid #f00 1px;	
+}
+
+.English{
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+a{
+    text-decoration:none;
+}
+
+#mainCenter a{
+    text-decoration:underline;
+font-family:Arial, Times New Roman;
+color:#e7e7e7;
+}
+#mainCenter a:hover{
+text-decoration:none;
+color:#ffffff;
+}
+
+div {
+hide-focus: expression(this.hideFocus=true); /* for ie 5+ */
+outline: none; /* for firefox 1.5 + */
+} 
+
+.clearfix:after {
+        visibility: hidden;
+        display: block;
+        font-size: 0;
+        content: " ";
+        clear: both;
+        height: 0;
+        }
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */

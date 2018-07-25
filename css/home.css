@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+body{
+	background:#f1f3f2;
+}
+#wrapper{
+background: #000;
+    width:960px;
+    
+    position:relative;
+    margin:auto;
+}
+
+#topper{border-top:solid #000 0px; height:48px; position:relative;
+background:#f1f3f2;
+}
+#logo{ position:absolute; top:15px; left:30px;}
+#topper ul{ position:absolute; top:18px; left:150px;}
+#topper ul li{ float:left; padding:0 40px 0 0;}
+#topper ul li a{color:#b2b2b2; font-size:14px; padding:0 0 5px 0;
+color:#333;
+}
+
+#topper ul li a:hover{border-bottom:solid 0px #b2b2b2;}
+#topper ul li a.active{border-bottom:solid 0px #b2b2b2;}
+
+#main{position:relative;}
+#gallery{height:535px; padding:0 0 0px 0;}
+#showtime{position:absolute;bottom:35px;left:30px;}
+#video{float:left; margin:0 4px 0 0;position:relative;}
+#productNew{float:left; position:relative;}
+#productCombine{float:right; position:relative}
+.greenBoard{position:absolute;bottom:0;left:0;height:0px;background:#a3db8a;}
+.label{position:absolute;top:0px; left:0px;}
+
+#footer{position:relative;clear:both; background:#000; color:#666; font-size:12px; border-top:solid #fff 0px; padding:30px 10px 0 10px; height:150px;
+background:#f1f3f2;
+}
+#footer span{position:absolute; top:130px; right:20px;}
+#footer ul{float:left; padding:0 50px 0 0;}
+#footer ul a{color:#666; }
+#footer ul b{color:#aaa; line-height:30px;}
+#tmall{position:absolute; right:40px; top:15px;}

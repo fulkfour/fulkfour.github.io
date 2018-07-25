@@ -1,0 +1,109 @@
+.select {margin-bottom: 10px;}
+.select label {
+    float: left;
+    margin-right:0; padding-top:2px;
+    font-size:11px;
+}
+.select select {
+    float:left;
+    margin:0; padding:1px; border:1px solid #CCC;
+    width:200px;
+    background:#FFF; color:#000;
+    font:12px arial, Verdana, sans-serif;
+}
+.actions input {float: right;}
+#js .select select {position: absolute; left: -10000px;}
+.fauxSelect {
+    float:left;
+    padding-left:0px; padding-right:31px; 
+    width: 176px;
+    height:31px;
+    background:url(../img/bg-select.png) no-repeat right bottom;
+}
+.focus {border-color:#F6A7CB;}
+.fauxSelect div {
+    overflow: hidden;
+    width:100%;
+    background:url(../img/bg-select.png) no-repeat;
+    height:31px;
+}
+.fauxSelect span {
+    display:block;
+    overflow:hidden;
+    margin-right:22px; padding:1px 2px;
+    width:500px; height:16px;
+    height:31px;
+    line-height:31px;
+    padding:0 0 0 10px;
+}
+#fauxOptions {
+    z-index:57;
+    overflow:hidden;
+    border:1px solid #d9dfe3;
+    background:#f0f0f0;
+}
+#fauxOptions ul {
+    margin:0; padding:0;
+    list-style:none;
+}
+#fauxOptions .scrolled ul {margin-right:14px;}
+#fauxOptions li {
+    padding:1px 2px 1px 5px;
+    background:none; color:#3d3d3d;
+}
+#fauxOptions li:hover {background:#fafafa;}
+#fauxOptions li.selected {background:#c9e0f2;}
+#fauxOptions .scrolled {position:absolute; top:0; left:0; z-index:58;}
+#fauxOptions .scrollbar {
+    position:absolute; top:1px; right:1px;
+    width:12px;
+}
+#fauxOptions .gutter {
+    position:absolute; top:0; left:0;
+    width:12px;
+    background:#fafafa;
+}
+#fauxOptions .bar {
+    position:absolute; top:0; left:0;
+    overflow:hidden;
+    width:12px;
+    background:#d90000;
+}
+#fauxOptions .bar .start {
+    position:absolute; left:0;
+    overflow:hidden;
+    width:12px; height:1px;
+    background:url(/templates/gallia/img/common/bg/scrollbar.png) no-repeat;
+}
+#fauxOptions .bar .end {
+    position:absolute; left:0;
+    overflow:hidden;
+    width:12px; height:1px;
+    background:url(/templates/gallia/img/common/bg/scrollbar.png) no-repeat;
+}
+#fauxOptions .bar .start {
+    top:0;
+    background-position:-12px 0; 
+}
+#fauxOptions .bar .end {
+    bottom:0;
+    background-position:-12px -11px;
+}
+.select:after, .actions:after {
+    display:block; clear:both;
+    visibility:hidden;
+    height:0;
+    content:".";
+}
+
+#boxFauxOptionsMask {z-index:56;}
+
+.boxBlueMin .fauxSelect, .boxBlueMax .fauxSelect {
+    border-color:#D5E4F5;
+    background-image:url(/templates/gallia/img/common/bg/faux-select-blue.png);
+}
+.boxBlueMin .focus, .boxBlueMax .focus {border-color:#C3D4E5;}
+.blueFauxOptions #fauxOptions {border-color:#D5E4F5;}
+.blueFauxOptions #fauxOptions li:hover {background:#E7EDF4;}
+.blueFauxOptions #fauxOptions li.selected {background:#D5E4F5;}
+.blueFauxOptions #fauxOptions .bar {background:url(/templates/gallia/img/common/bg/scrollbar-blue.png) repeat-y;}
